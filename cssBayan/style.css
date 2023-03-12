@@ -1,34 +1,23 @@
 body {
-  margin: 0 auto;
-  overflow-y: hidden;
-}
-
-.container {
-  width: 70%;
-  margin: auto;
-}
-
-body {
   color: #2c3e50;
   background: #ecf0f1;
   padding: 0 1em 1em;
+  margin: 0 auto;
+  font-size: 1.2em;
 }
-h1 {
-  margin: 0;
-  line-height: 2;
-  text-align: center;
+
+.container {
+  max-width: 70%;
+  margin: auto;
 }
-h2 {
-  margin: 0 0 0.5em;
-  font-weight: normal;
-}
+
 input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
 
-/* Accordion styles */
+
 .items {
   border-radius: 8px;
   overflow: hidden;
@@ -56,6 +45,7 @@ input {
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
+transition: background-image 0.3s ease-in-out;
 }
 .tab-content {
   max-height: 0;
@@ -63,25 +53,27 @@ input {
   color: #2c3e50;
   background: white;
   transition: all 0.35s;
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 input:checked + .tab-label {
   background: #1a252f;
 }
-/* input:checked + .cont:hover {
+input:checked + .cont:hover {
   background-image: url(../image/arr-down.png);
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
-} */
+transition: background-image 0.3s ease-in-out;
+}
 
-input:hover ~ .tab-content {
+input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
-input:checked ~ .tab-content {
+
+input:hover ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
@@ -89,6 +81,7 @@ input:checked ~ .tab-content {
 .tab-content:hover {
   max-height: 100vh;
   padding: 1em;
+  cursor: pointer;
 }
 
 .item__list:hover .cont {
@@ -96,6 +89,7 @@ input:checked ~ .tab-content {
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
+transition: background-image 0.3s ease-in-out;
 }
 
 .item__list:focus .tab-content {
@@ -108,4 +102,51 @@ input:checked ~ .tab-content {
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
+transition: background-image 0.3s ease-in-out;
+}
+
+img {
+  max-width: 95%;
+}
+
+@media (max-width: 820px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 0.7em;
+  }
+  .items:hover .cont {
+    background-image: url(../image/arr-right.png);
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 56%;
+    background-size: 10%;
+  }
+
+  .item__list:hover .cont {
+    background-image: url(../image/arr-down.png);
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 56%;
+    background-size: 10%;
+  }
+
+  .item__list:focus .cont {
+    background-image: url(../image/arr-down.png);
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 56%;
+    background-size: 10%;
+  }
+  /* input:checked + .cont:hover {
+    background-image: url(../image/arr-down.png);
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 56%;
+    background-size: 10%;
+  } */
 }
