@@ -17,7 +17,6 @@ input {
   z-index: -1;
 }
 
-
 .items {
   border-radius: 8px;
   overflow: hidden;
@@ -142,11 +141,11 @@ img {
     background-position-y: 56%;
     background-size: 10%;
   }
-  /* input:checked + .cont:hover {
+  input:checked + .cont:hover {
     background-image: url(../image/arr-down.png);
     background-repeat: no-repeat;
     background-position-x: 99%;
     background-position-y: 56%;
     background-size: 10%;
-  } */
+  }
 }
