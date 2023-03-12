@@ -40,7 +40,7 @@ input {
 }
 
 .items:hover .cont {
-  background-image: url(../image/arr-right.png);
+  background-image: url(./image/arr-right.png);
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
@@ -60,7 +60,7 @@ input:checked + .tab-label {
   background: #1a252f;
 }
 input:checked + .cont:hover {
-  background-image: url(../image/arr-down.png);
+  background-image: url(./image/arr-down.png);
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
@@ -84,7 +84,7 @@ input:hover ~ .tab-content {
 }
 
 .item__list:hover .cont {
-  background-image: url(../image/arr-down.png);
+  background-image: url(./image/arr-down.png);
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
@@ -97,7 +97,7 @@ transition: background-image 0.3s ease-in-out;
 }
 
 .item__list:focus .cont {
-  background-image: url(../image/arr-down.png);
+  background-image: url(./image/arr-down.png);
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 56%;
@@ -124,7 +124,7 @@ img:hover {
     font-size: 0.7em;
   }
   .items:hover .cont {
-    background-image: url(../image/arr-right.png);
+    background-image: url(./image/arr-right.png);
     background-repeat: no-repeat;
     background-position-x: 99%;
     background-position-y: 56%;
@@ -132,7 +132,7 @@ img:hover {
   }
 
   .item__list:hover .cont {
-    background-image: url(../image/arr-down.png);
+    background-image: url(./image/arr-down.png);
     background-repeat: no-repeat;
     background-position-x: 99%;
     background-position-y: 56%;
@@ -140,14 +140,14 @@ img:hover {
   }
 
   .item__list:focus .cont {
-    background-image: url(../image/arr-down.png);
+    background-image: url(./image/arr-down.png);
     background-repeat: no-repeat;
     background-position-x: 99%;
     background-position-y: 56%;
     background-size: 10%;
   }
   input:checked + .cont:hover {
-    background-image: url(../image/arr-down.png);
+    background-image: url(./image/arr-down.png);
     background-repeat: no-repeat;
     background-position-x: 99%;
     background-position-y: 56%;
